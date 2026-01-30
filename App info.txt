@@ -1,0 +1,12 @@
+Unilink
+An app where students can use as a freelancing
+ app where you can get people who offer services ,
+  deliver items and much more , so bascially when you re
+  gister you pick wherther you are there to browse for service
+  s of to offer and choose if its sales, or online services you also indicate which university you attend and there should also be a place where students can like offer errands but only for thier local students in the same school, there should be a listing of top sales and there should be ratings for each seller and the chat should be in the app they can share pictures, images, videos, files , links etc and the payments should also be in the app so that the owner which is me can benefit from it and each seller and only seller should pay for being able to sell 1000 naira is the price per mothe and 10,000 naira per year.
+
+  the colors are:
+
+#10B981
+#1F2937
+#F9FAFB

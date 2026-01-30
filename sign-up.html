@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="firebase.js" defer></script>
+    <title>Sign-Up</title>
+</head>
+<body>
+    <style>
+        body{
+            background-color: #1F2937;
+        }
+        .login-page * {
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  background-color: #F9FAFB;
+}
+
+.login-page {
+  background: #1F2937;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+.login-logo {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+.login-page a{
+  text-decoration: none;
+  background: none;
+}
+.login-uni {
+  color: white;
+  background: #2563EB;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+}
+
+.login-link {
+  color: #22c55e;
+}
+
+.login-card {
+  background: white;
+  padding: 2rem;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.login-card h2 {
+  margin-bottom: 1.5rem;
+  color: #2563EB;
+}
+
+.login-card label {
+  display: block;
+  text-align: left;
+  margin-bottom: 0.3rem;
+  margin-top: 1rem;
+  color: #111827;
+}
+
+.login-card input,
+.login-card select {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 0.5rem;
+  border-radius: 8px;
+  border: 1px solid #D1D5DB;
+  outline: none;
+}
+
+.login-card input:focus,
+.login-card select:focus {
+  border-color: #2563EB;
+}
+
+.login-btn {
+  width: 100%;
+  padding: 0.8rem;
+  margin-top: 1rem;
+  background: #22c55e;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.login-btn:hover {
+  background: #16a34a;
+}
+
+.login-signup-text {
+  margin-top: 1rem;
+  color: #6B7280;
+}
+
+.login-signup-text a {
+  color: #2563EB;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.login-signup-text a:hover {
+  text-decoration: underline;
+}
+
+    </style>
+    <div class="login-page">
+
+  <!-- Logo -->
+  <a href="Home.html"><h1 class="login-logo"><span class="login-uni">Uni</span><span class="login-link">link</span></h1></a>
+
+  <!-- Form Card -->
+  <div class="login-card">
+    <h2>Sign Up</h2>
+    <form id="signupForm">
+
+      <!-- Username -->
+      <label for="username">Username</label>
+      <input type="text" id="username" placeholder="Enter your username" required>
+      <!-- Email -->
+      <label for="email">Email or Phone</label>
+      <input type="text" id="email" placeholder="Enter your email or phone" required>
+
+      <!-- Password -->
+      <label for="password">Password</label>
+      <input type="password" id="password" placeholder="Enter your password" required>
+
+      <!-- User Type -->
+      <label for="userType">I am a:</label>
+      <select id="userType" required>
+        <option value="">Select...</option>
+        <option value="buyer">Buyer</option>
+        <option value="seller">Seller</option>
+      </select>
+
+      <!-- University -->
+      <label for="university">University:</label>
+      <select id="university" required>
+        <option value="">Select your university</option>
+        <option value="unilag">University of Lagos (UNILAG)</option>
+        <option value="ui">University of Ibadan (UI)</option>
+        <option value="lasu">Lagos State University (LASU)</option>
+        <option value="abuja">University of Abuja</option>
+        <option value="futo">Federal University of Technology Owerri (FUTO)</option>
+        <!-- Add more universities as needed -->
+      </select>
+
+      <!-- Submit Button -->
+      <button type="submit" class="login-btn" id="signupBtn">Sign Up</button>
+    </form>
+
+    <p class="login-signup-text">
+      Already have an account? <a href="login.html">Login</a>
+    </p>
+  </div>
+</div>
+</body>
+</html>

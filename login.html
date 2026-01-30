@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="login.js" defer></script>
+    <title>Login Page</title>
+</head>
+<body>
+
+    <style>
+        /* Wrap all styles under .login-page to prevent conflicts */
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #111827;
+  font-family: 'Poppins', sans-serif;
+}
+.login-page * {
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #F9FAFB;
+}
+.login-page a{
+  text-decoration: none;
+  background: none;
+}
+.login-page {
+  background: #111827;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+.login-page .login-logo {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.login-page .login-uni {
+  color: white;
+  background: #2563EB; /* Blue background for Uni */
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+}
+
+.login-page .login-link {
+  color: #22c55e; /* Green for link */
+}
+
+.login-page .login-card {
+  background: #F9FAFB;
+  padding: 2rem;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.login-page .login-card h2 {
+  margin-bottom: 1.5rem;
+  color: #2563EB;
+}
+
+.login-page .login-card label {
+  display: block;
+  text-align: left;
+  margin-bottom: 0.3rem;
+  margin-top: 1rem;
+  color: #111827;
+}
+
+.login-page .login-card input {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 0.5rem;
+  border-radius: 8px;
+  border: 1px solid #D1D5DB;
+  outline: none;
+}
+
+.login-page .login-card input:focus {
+  border-color: #2563EB;
+}
+
+.login-page .login-btn {
+  width: 100%;
+  padding: 0.8rem;
+  margin-top: 1rem;
+  background: #22c55e;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.login-page .login-btn:hover {
+  background: #16a34a;
+}
+
+.login-page .login-signup-text {
+  margin-top: 1rem;
+  color: #6B7280;
+}
+
+.login-page .login-signup-text a {
+  color: #2563EB;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.login-page .login-signup-text a:hover {
+  text-decoration: underline;
+}
+
+    </style>
+    <div class="login-page">
+
+  <!-- Logo -->
+  <a href="Home.html"><h1 class="login-logo"><span class="login-uni">Uni</span><span class="login-link">link</span></h1></a>
+
+  <!-- Form Card -->
+  <div class="login-card">
+    <h2>Login</h2>
+    <form id="loginForm">
+      <label for="email">Email or Phone</label>
+      <input type="text" id="email" placeholder="Enter your email or phone" required>
+
+      <label for="password">Password</label>
+      <input type="password" id="password" placeholder="Enter your password" required>
+
+      <button type="submit" class="login-btn" id="loginBtn">Login</button>
+    </form>
+
+    <p class="login-signup-text">
+      Don't have an account? <a href="sign-up.html">Sign Up</a>
+    </p>
+  </div>
+
+</div>
+
+</body>
+</html>
